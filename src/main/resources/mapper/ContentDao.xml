@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.zeen.csgrule.dao.ContentDao">
+
+	<!-- 可根据自己的需求，是否要使用 -->
+    <resultMap type="com.zeen.csgrule.entity.ContentEntity" id="contentMap">
+        <result property="contentid" column="CONTENTID"/>
+        <result property="accountid" column="ACCOUNTID"/>
+        <result property="content" column="CONTENT"/>
+        <result property="updatetime" column="UPDATETIME"/>
+        <result property="state" column="STATE"/>
+    </resultMap>
+
+
+</mapper>

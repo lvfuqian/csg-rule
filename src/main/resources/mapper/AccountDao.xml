@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.zeen.csgrule.dao.AccountDao">
+
+	<!-- 可根据自己的需求，是否要使用 -->
+    <resultMap type="com.zeen.csgrule.entity.AccountEntity" id="accountMap">
+        <result property="accountid" column="ACCOUNTID"/>
+        <result property="compellation" column="COMPELLATION"/>
+        <result property="mobile" column="MOBILE"/>
+        <result property="password" column="PASSWORD"/>
+        <result property="sex" column="SEX"/>
+        <result property="age" column="AGE"/>
+        <result property="updatetime" column="UPDATETIME"/>
+        <result property="logintime" column="LOGINTIME"/>
+        <result property="state" column="STATE"/>
+        <result property="logo" column="LOGO"/>
+        <result property="groupid" column="GROUPID"/>
+    </resultMap>
+
+    <select id="showMsg" resultType="java.util.HashMap">
+        select
+        *
+        from ACCOUNT
+        where ACCOUNTID={accountid}
+    </select>
+
+
+</mapper>

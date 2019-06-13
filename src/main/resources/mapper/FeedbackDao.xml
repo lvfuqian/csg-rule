@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.zeen.csgrule.dao.FeedbackDao">
+
+	<!-- 可根据自己的需求，是否要使用 -->
+    <resultMap type="com.zeen.csgrule.entity.FeedbackEntity" id="feedbackMap">
+        <result property="feedbackid" column="FEEDBACKID"/>
+        <result property="accountid" column="ACCOUNTID"/>
+        <result property="contentid" column="CONTENTID"/>
+        <result property="feedback" column="FEEDBACK"/>
+        <result property="state" column="STATE"/>
+        <result property="updatetime" column="UPDATETIME"/>
+    </resultMap>
+
+
+</mapper>
